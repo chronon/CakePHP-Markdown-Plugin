@@ -19,7 +19,6 @@ In your controller:
 ```php
 <?php
 public $helpers = array('Markdown.Markdown');
-));
 ```
 
 In your view:
@@ -27,5 +26,4 @@ In your view:
 ```php
 <?php
 echo $this->Markdown->md(markdown_to_be_converted_to_html);
-)); 
 ```
