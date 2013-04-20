@@ -1,11 +1,41 @@
 CakePHP Markdown Helper Plugin
 ==============================
 
-A [PHP Markdown](https://github.com/michelf/php-markdown/) helper packaged as a plugin, includes
-php-markdown.php.
+A [PHP Markdown](https://github.com/michelf/php-markdown/) helper packaged as a plugin. 
+
+* Branch `1.0.0` includes php-markdown.php in the plugin's Vendor directory. 
+* Branch `master` works with [composer](http://getcomposer.org) and is available on [Packagist](https://packagist.org/). 
 
 Installation:
 -------------
+
+**Composer:**
+
+If you are using composer, require `chronon/markdown`:
+
+```
+{
+    "require": {
+        "chronon/markdown": "2.0.*"
+    },
+	"config": {
+        "vendor-dir": "Vendor"
+    }
+}
+```
+This will install the plugin into `Plugin/Markdown`, and install Markdown lib (from Packagist) into
+your `Vendor` directory.
+
+In `Config/bootstrap.php`, import composer's autoload file:
+
+```php
+<?php
+App::import('Vendor', array('file' => 'autoload'));
+```
+
+**Git or Download**
+
+If you are **not** using composer, clone the repository and checkout tag `1.0.0`.
 
 ```sh
 git clone git@github.com:chronon/CakePHP-Markdown-Plugin.git APP/Plugin/Markdown

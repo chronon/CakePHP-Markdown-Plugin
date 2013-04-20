@@ -1,16 +1,13 @@
 <?php
 App::uses('AppHelper', 'View/Helper');
-App::import('Vendor', 'Markdown.markdown/markdown');
 
 /**
  * MarkdownHelper - a CakePHP helper to output Markdown
  *
- * Uses php-markdown: https://github.com/michelf/php-markdown/
- *
  * @package MarkdownHelper
- * @version Release: 1.0
+ * @version Release: 2.0.0
  * @author Gregory Gaskill <gregory@chronon.com>
- * @link http://technokracy.net
+ * @link https://github.com/chronon/CakePHP-Markdown-Plugin
  */
 class MarkdownHelper extends AppHelper {
 
@@ -20,13 +17,14 @@ class MarkdownHelper extends AppHelper {
  * @param string $input The markdown formatted text.
  * @return string The converted HTML.
  * @access public
- * @throws CakeException if the php-markdown file can't be found/loaded.
+ * @throws CakeException if Markdown lib can't be found/loaded.
  */
 	public function md($input) {
-		if (!function_exists('Markdown')) {
-			throw new CakeException('The Markdown vendor file was not loaded.');
+		if (!class_exists('Michelf\Markdown')) {
+			throw new CakeException('Markdown lib was not auto-loaded.');
 		}
-		return Markdown($input);
+		$Markdown = new Michelf\Markdown;
+		return $Markdown->defaultTransform($input);
 	}
 
 }
