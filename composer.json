@@ -2,7 +2,7 @@
     "name": "chronon/markdown",
 	"type": "cakephp-plugin",
 	"description": "A CakePHP 2.x Markdown helper packaged as a plugin.",
-    "keywords": ["cakephp","helper"],
+    "keywords": ["cakephp", "helper", "markdown"],
 	"homepage": "https://github.com/chronon/CakePHP-Markdown-Plugin",
     "license": "MIT",
     "authors": [
