@@ -27,6 +27,7 @@ class MarkdownHelper extends AppHelper {
 		}
 
 		// autoload failed, try the included vendor file
+		App::import('Vendor', 'Markdown.markdown/markdown');
 		if (!function_exists('Markdown')) {
 			throw new CakeException('The Markdown vendor file was not loaded.');
 		}
