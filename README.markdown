@@ -9,14 +9,14 @@ A [PHP Markdown](https://github.com/michelf/php-markdown/) helper packaged as a 
 Installation:
 -------------
 
-**Installation: Composer**
+**Using [Composer](http://getcomposer.org/)/[Packagist](https://packagist.org):**
 
 If you are using composer, require `chronon/markdown`:
 
 ```
 {
     "require": {
-        "chronon/markdown": "2.0.*"
+        "chronon/markdown": "*"
     },
 	"config": {
         "vendor-dir": "Vendor"
@@ -33,9 +33,9 @@ In `Config/bootstrap.php`, import composer's autoload file:
 App::import('Vendor', array('file' => 'autoload'));
 ```
 
-**Installation: Git or Download**
+**Using git:**
 
-If you are **not** using composer, clone the repository and checkout tag `1.0.0`.
+If you are **not** using composer, clone the repository:
 
 ```sh
 git clone git@github.com:chronon/CakePHP-Markdown-Plugin.git APP/Plugin/Markdown
