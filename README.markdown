@@ -3,8 +3,8 @@ CakePHP Markdown Helper Plugin
 
 A [PHP Markdown](https://github.com/michelf/php-markdown/) helper packaged as a plugin. 
 
-* Branch `1.0` includes php-markdown.php in the plugin's Vendor directory. 
-* Branch `master` works with [composer](http://getcomposer.org) and is available on [Packagist](https://packagist.org/). 
+This plugin works with [Composer](http://getcomposer.org) and is available on 
+[Packagist](https://packagist.org/). 
 
 Installation:
 -------------
