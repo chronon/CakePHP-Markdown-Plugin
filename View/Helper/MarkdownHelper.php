@@ -21,8 +21,8 @@ class MarkdownHelper extends AppHelper {
  */
 	public function md($input) {
 		// attempt to use the autoloaded class first
-		if (class_exists('Michelf\Markdown')) {
-			$Markdown = new Michelf\Markdown;
+		if (class_exists('Michelf\MarkdownExtra')) {
+			$Markdown = new Michelf\MarkdownExtra;
 			return $Markdown->defaultTransform($input);
 		}
 
