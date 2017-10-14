@@ -1,6 +1,8 @@
 CakePHP Markdown Helper Plugin
 ==============================
 
+**DEPRECATION NOTICE:** This CakePHP 2.x plugin is deprecated and will most likely not be updated.
+
 A [PHP Markdown](https://github.com/michelf/php-markdown/) helper packaged as a plugin. 
 
 This plugin works with [Composer](http://getcomposer.org) and is available on 
